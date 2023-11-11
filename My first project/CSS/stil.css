@@ -1,0 +1,248 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+  }
+  header {
+    background-color: rgb(255, 252, 252);
+    padding: 0px;
+  }
+  header nav {
+    top: 25px;
+    right: 30px;
+    color: #000;
+    position: fixed;
+    
+  }
+  header nav a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+  }
+  header nav a:hover {
+    text-decoration: underline #000;
+  }
+  header h3{
+    top: 10px;
+    left: 20px;
+    color: #000;
+    position: fixed;
+  }
+  section{
+    display: flex;
+     
+  }
+  section#home{
+   background-image: url(../background/background1.jpg);
+   background-repeat:no-repeat;
+   background-size: 100% 100%;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+  }
+  .text{
+    text-align: center;
+    height: 350px;
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.797);
+    display: inline-block;
+  background-image: linear-gradient( #888, #000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; 
+  transition: all 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  }
+  .text:hover {
+    color: #000; 
+    cursor: pointer; 
+  }
+  section#about{
+    margin: 0px 0px;
+    background-color: #000;
+    text-align: left; 
+    height: 100vh; 
+   }
+#about h1{
+    margin-top: 300px;
+    margin-left: 130px; 
+    color: white;
+    font-size: 64px;
+    white-space: nowrap;
+    text-decoration: underline rgb(255, 255, 15);
+}
+#about h1:hover{
+    text-decoration:overline rgb(255, 255, 15);
+}
+  .para{
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-top: 190px;
+    margin-left: 190px;
+    margin-right: 90px;
+    flex-direction: column;
+  }
+  .button-container {
+    text-align: center; 
+    margin-top: 500px; 
+    position: absolute;
+    margin-left: 895px;
+  }
+  button{
+    font-size: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+  }
+  button:hover{
+    color: black;
+    background-color: rgb(255, 255, 15);
+  }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 5vw;
+    font-weight: 100;
+  }
+  section#slika{
+    background-image: url(../background/background2.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+ section#projects a{
+    color: #000;
+    text-decoration: none;
+}
+.logo:after{
+    content: "";
+    background: black;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  .logo:hover {
+    color: white; 
+  }
+  
+  .logo:hover::after{
+    height: calc(100% + 8px);
+  }
+  section#projects p{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 30px;
+    font-size: 22px; 
+    text-align: center; 
+    font-family: 'Dosis', sans-serif;
+    
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  img{
+    width: 20%;
+    border: 2px outset black;
+    margin-right: 10px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+  }
+  .red{
+    display: flex;
+  }
+  .grayscale-image {
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+  }
+  
+  .red:hover .grayscale-image {
+    filter: grayscale(0%);
+  }
+  section#pozadina{
+     background-image: url(../background/background3.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   .contact-section {
+    text-align: center;
+    background-color: #f2f2f2; 
+    padding: 50px 0;
+  }
+  
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-title {
+    font-size: 38px;
+    color: #333;
+  }
+  
+  .contact-text {
+    font-size: 22px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .contact-email {
+    font-size: 18px;
+    color: #000000; 
+    margin-top: 20px;
+    text-decoration: none;
+    margin-left: 14px;
+  }
+  
+  .contact-find-me {
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    color: #007bff; 
+  }
+.bez{
+  color: #000;
+  text-decoration: none;
+}
+footer{
+  text-align: center;
+  font-size: 16px;
+}
+  
